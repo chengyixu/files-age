@@ -1,7 +1,7 @@
 {
   "name": "@chengyixu/files-age",
-  "version": "1.0.2",
-  "description": "Show file ages in human-readable format \u2014 instantly see how old files are, sorted and filterable",
+  "version": "1.0.3",
+  "description": "Show file ages in human-readable format — instantly see how old files are, sorted and filterable",
   "main": "index.js",
   "bin": {
     "files-age": "index.js"
@@ -33,7 +33,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "test": "node test/sort.test.js && node test/package-metadata.test.js && node test/package-version.test.js"
+    "test": "node test/sort.test.js && node test/package-metadata.test.js && node test/package-version.test.js && node test/unknown-option.test.js"
   },
   "publishConfig": {
     "access": "public"

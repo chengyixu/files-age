@@ -40,7 +40,7 @@ function parseArgs(argv) {
     } else if (a === '-d' || a === '--dir') {
       opts.dir = args[++i];
     } else if (a.startsWith('-')) {
-      // pass
+      opts.error = 'unknown option: ' + a;
     } else {
       opts.paths.push(a);
     }
@@ -88,6 +88,11 @@ function fmtDate(ms) {
 
 function main() {
   const opts = parseArgs(process.argv);
+
+  if (opts.error) {
+    process.stderr.write('files-age: ' + opts.error + '\n');
+    process.exit(2);
+  }
 
   if (opts.help) {
     process.stdout.write(HELP);
