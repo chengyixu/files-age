@@ -1,10 +1,10 @@
 {
   "name": "@chengyixu/files-age",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Show file ages in human-readable format \u2014 instantly see how old files are, sorted and filterable",
   "main": "index.js",
   "bin": {
-    "files-age": "./index.js"
+    "files-age": "index.js"
   },
   "files": [
     "index.js",
@@ -27,13 +27,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chengyixu/files-age"
+    "url": "git+https://github.com/chengyixu/files-age.git"
   },
   "engines": {
     "node": ">=16"
   },
   "scripts": {
-    "test": "node test/sort.test.js"
+    "test": "node test/sort.test.js && node test/package-metadata.test.js && node test/package-version.test.js"
   },
   "publishConfig": {
     "access": "public"
