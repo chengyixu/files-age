@@ -1,0 +1,41 @@
+{
+  "name": "@chengyixu/files-age",
+  "version": "1.0.1",
+  "description": "Show file ages in human-readable format \u2014 instantly see how old files are, sorted and filterable",
+  "main": "index.js",
+  "bin": {
+    "files-age": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "file",
+    "age",
+    "cli",
+    "human-readable",
+    "files",
+    "directory",
+    "modified",
+    "time",
+    "sort",
+    "stale"
+  ],
+  "author": "chengyixu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chengyixu/files-age"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "node test/sort.test.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
